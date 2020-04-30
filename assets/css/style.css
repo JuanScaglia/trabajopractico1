@@ -1,0 +1,172 @@
+  /* imagen de fondo*/
+  body{
+        background-color: #3a3939;
+       }
+/* Selector etiquetas h*/
+
+ 
+ h1
+ {
+     text-align: center;
+     background-color: #17A7AF;
+ }
+ h2{
+         color: rgb(255, 255, 255);
+         font-size: 30px;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+ h3{
+         color: black;
+         font-size: 24px;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         text-align: center;
+         background-color: rgb(139, 139, 139);
+         padding: 10px;
+         margin: 5px;             
+        
+   }
+
+  h4{
+         color: black;
+         font-size: 24px;
+         font-family: cursive;
+         text-align: center;
+         background-color: rgb(75, 75, 75);
+         padding: 10px;
+         margin: 5px;             
+        
+   }
+  
+  h5{
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: right;
+  }
+ /* Selector clase circular--square */
+ .circular--square 
+ {
+         border-radius: 50%;
+         -webkit-box-shadow: 6px 6px 18px -1px rgba(39, 39, 39, 0.75);
+         -moz-box-shadow: 6px 6px 18px -1px rgba(39, 39, 39, 0.75);
+         box-shadow: 6px 6px 18px -1px rgba(39, 39, 39, 0.75);
+         
+ }
+
+ /* Selector ID  */
+
+#parrafo--especial
+ {
+         /*tipo, tamaño y color de fuente*/
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         font-size: 20px;
+         color: rgb(255, 255, 255);
+ }       
+
+ #parrafo--especial-1
+ {
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         font-size: 20px;
+         color: rgb(0, 0, 0);
+         text-align: center;
+ }
+  
+
+/* Selector clase rectangular--square */
+.rectangle--square
+ {
+         border-radius: 25%; 
+ }
+
+ 
+/* Selector clase section */
+ .section 
+ {
+         /*color de fondo del recuadro*/
+         background-color: #555555;
+         /*margenes*/
+         padding: 15px;
+         margin-bottom: 10px;
+         /*bordes redondeados*/
+         border-radius: 31px 31px 31px 31px;
+         -moz-border-radius: 31px 31px 31px 31px;
+         -webkit-border-radius: 31px 31px 31px 31px;
+         /*sombra*/
+         -webkit-box-shadow: 6px 6px 18px -1px rgba(0,0,0,0.75);
+         -moz-box-shadow: 6px 6px 18px -1px rgba(0,0,0,0.75);
+         box-shadow: 6px 6px 18px -1px rgba(0,0,0,0.75);
+         /*opacidad*/
+         opacity: 0.8;
+         -moz-opacity: 0.8;
+         filter: alpha(opacity=80);
+         -khtml-opacity: 0.8;
+         
+ }
+ 
+ .section-2 
+ {
+         /*color de fondo del recuadro*/
+         background-color: #222222;
+          
+          /*bordes redondeados*/
+         border-radius: 31px 31px 31px 31px;
+         -moz-border-radius: 31px 31px 31px 31px;
+         -webkit-border-radius: 31px 31px 31px 31px;
+         
+ }
+
+ /* Selector clase progress */
+ 
+progress 
+ {
+         width: 20%;
+         height: 20px;
+         color: #41678a;
+         background: #8d8989;
+         border-radius: 50%;
+ }
+        
+progress::-webkit-progress-bar
+ {
+         background: #8d8989;
+ }
+progress::-webkit-progress-value
+ {
+         background: #41678a;
+ }
+/* Ventana Flotante */
+ .vFlotante
+ {
+   position:fixed;
+   right:-220px;
+   top:-200;
+   width:300px;
+   height:200px;
+   transition:all .4s ease-in;
+   -webkit-transition:all .4s ease-in;
+   -moz-transition:all .4s ease-in;
+   -o-transition:all .4s ease-in;
+   z-index: 100;
+ }
+ .vFlotante:hover
+ {
+   right:20px;
+ }
+ .vFlotante>div:last-child{padding-left:10px;}
+ .titulo
+ {
+   transform:rotate(270deg);
+   -webkit-transform:rotate(270deg);
+   -moz-transform:rotate(270deg);
+   -o-transform:rotate(270deg);
+   display: inline-block;
+   margin-top: 1.7cm;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: bolder;
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   background-color: rgb(255, 174, 0);
+   
+ }
+ 
