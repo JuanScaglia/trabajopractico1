@@ -1,0 +1,46 @@
+<html lang="es">
+
+<head>
+<title>Función propia</title>
+
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+<script>
+
+  var nombre = prompt("Por favor, ingrese su nombre");
+  var mes = prompt("En qué mes es tu cumpleaños?");
+  mes = mes.toLowerCase()
+  
+if (mes == "enero") {n="primer"}
+  else
+    if (mes == "febrero") {n="segundo"}
+      else
+        if (mes == "marzo") {n="tercer"}
+          else
+            if (mes == "abril") {n="cuarto"}
+              else
+                if (mes == "mayo") {n="quinto"}
+                  else
+                    if (mes == "junio") {n="sexto"}
+                     else
+                       if (mes == "julio") {n="séptimo"}
+                         else
+                           if (mes == "agosto") {n="octavo"}
+                             else
+                               if (mes == "septiembre") {n="noveno"}
+                                 else
+                                   if (mes == "octubre") {n="décimo"}
+                                     else
+                                       if (mes == "noviembre") {n="décimo primer"}
+                                         else
+                                           if (mes == "diciembre") {n="décimo segundo"}
+                                             else alert ("Ingrese un dato válido");
+                                               
+                                            
+  var texto = "Bienvenido " + nombre + "\n" + mes + " es el " + n +  " mes del año";
+  alert(texto);
+  alert ("Muchas gracias " + nombre + "!");
+</script>
+    
+</head>
+<body>

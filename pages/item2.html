@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <title>Formulario 2</title>
+</head>
+<body>
+    
+    <h2>Hola! Te gustaría contarme sobre vos?</h2>
+
+    <input type="text" placeholder="escribe tu nombre" id="nombre"><br><br>
+    <input type="text" placeholder="escribe tu edad" id="edad"><br><br>
+    <input type="text" placeholder="escribe tu ciudad" id="ciudad"><br><br>
+    <input type="text" placeholder="cuál es tu hooby" id="hooby"><br><br>
+    <input type="button" value="Enviar" onclick="Sumar();">
+    <script type="text/javascript">
+      function Sumar()
+      {
+          
+          var nombre=(document.getElementById('nombre').value);
+          var edad=(document.getElementById('edad').value);
+          var ciudad=(document.getElementById('ciudad').value);
+          var hooby=(document.getElementById('hooby').value);
+          
+          document.getElementById("salida").innerHTML = (nombre + ", es un joven de " + edad + " años de edad." + "\n Vive en " + ciudad + ". Y le encanta " + hooby + "."); 
+        }
+    </script>
+    
+      <br><p><h2><span style="color: aliceblue;" id="salida"></h2></span></p>
+
+
+</body>
+</html>
+
+
+
+    

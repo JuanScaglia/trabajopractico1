@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script>
+
+ document.addEventListener("DOMContentLoaded", function() {
+
+
+var elemW = document.querySelector(".w-key");
+var elemA = document.querySelector(".a-key");
+var elemS = document.querySelector(".s-key");
+var elemD = document.querySelector(".d-key");
+window.focus();
+
+// color de fondo de las teclas
+elemW.style.backgroundColor = "#fff";
+elemA.style.backgroundColor = "#fff";
+elemS.style.backgroundColor = "#fff";
+elemD.style.backgroundColor = "#fff";
+
+// cambio de color cuando se presiona "keydown" 
+document.addEventListener("keydown", function(event) {
+  switch(event.key) {
+    case "w" || "W" :
+      elemW.style.backgroundColor = "red";
+      break;
+    case "a" || "A":
+      elemA.style.backgroundColor = "green";
+      break;
+    case "s" || "S":
+      elemS.style.backgroundColor = "blue";
+      break;
+    case "d" || "D":
+        elemD.style.backgroundColor = "yellow";
+      break;
+  }
+});
+// cuando se dejan de presionar las teclas, vuelven a su color original
+document.addEventListener("keyup", function(event) {
+  switch(event.key) {
+    case "w" || "W":
+      elemW.style.backgroundColor = "#fff";
+      break;
+    case "a" || "A":
+      elemA.style.backgroundColor = "#fff";
+      break;
+    case "s" || "S":
+      elemS.style.backgroundColor = "#fff";
+      break;
+    case "d" || "D":
+      elemD.style.backgroundColor = "#fff";
+      break;
+  }
+});
+
+});
+  </script>
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <title>REACCIÓN A TECLAS DEL TECLADO</title>
+</head>
+<body>
+
+  <h1><marquee>INTERACTÚE CON EL TECLADO</marquee></h1>
+  <h3>Precione las teclas W, A, S y D para interactuar con la pantalla.</h3>
+  <br>
+
+  <div class="contenedor-teclas">
+    <div class="boton-w">
+      <div class="w-key">W</div>
+    </div>
+
+    <div class="boton-a-s">
+      <div class="a-key">A</div>
+      <div class="s-key">S</div>
+      <div class="d-key">D</div>
+    </div>
+  </div>
+
+  <br>
+  <p><a style= "color: blanchedalmond"> Al precionar las teclas en su teclado verá como cambian de color en la pantalla.
+  <br> Para que funcione correctamente debe tener desectivado el BloqMayus. </a></p>
+
+</body>
+</html>

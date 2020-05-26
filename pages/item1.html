@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>EJERCICIO MODULO 2 - TRIVIA</title>
+
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+<script>
+
+function resultado() {
+var p1, p2, p3, p4, p5, nota, respuestas;
+ 
+//1ª pregunta//
+if (document.getElementById('p11').checked==true) {p1=10}
+else {p1=0}
+//2ª pregunta//
+if (document.getElementById('p22').checked==true) {p2=10}
+else {p2=0}
+//3ª pregunta//
+if (document.getElementById('p33').checked==true) {p3=10}
+else {p3=0}
+//4ª pregunta//
+if (document.getElementById('p44').checked==true) {p4=10}
+else {p4=0}
+// 5ª pregunta //
+if (document.getElementById('p51').checked==true) {p5=10}
+else {p5=0}
+
+
+respuestas= "\n Pregunta 1 - Kratos " + "\n Pregunta 2 - Tennis For Two " + "\n Pregunta 3 - Red - Green - Blue " + "\n Pregunta 4 - Eidetic" + "\n Pregunta 5 - Link";
+nota=p1+p2+p3+p4+p5;
+
+alert("Puntos: "  + nota)
+alert ("Respuestas correctas: " + respuestas)
+
+location.reload();
+}
+
+</script>
+</head>
+<body>
+
+<h2><marquee>TRIVIA DE JUAN SCAGLIA</marquee></h2>
+ <hr>
+
+<p><h3>Cuál es el protagonista de la saga God of War?.</h3></p><h6>
+<p onclick=><input type="radio" name="pregunta1" id="p11"> Kratos.</p>
+<p onclick=><input type="radio" name="pregunta1" id="p12"> Mario Bross.</p>
+<p onclick=><input type="radio" name="pregunta1" id="p13"> Lara Croft.</p>
+<p onclick=><input type="radio" name="pregunta1" id="p14"> Nathan Drake.</h6></p>
+ <hr>
+
+<p><h3>Cuál es considerado el primer videojuego?.</p></h3><h6>
+<p onclick=><input type="radio" name="pregunta2" id="p21"> Tetris.</p>
+<p onclick=><input type="radio" name="pregunta2" id="p22"> Tennis For Two.</p>
+<p onclick=><input type="radio" name="pregunta2" id="p23"> Pac-Man.</p>
+<p onclick=><input type="radio" name="pregunta2" id="p24"> Pong.</h6></p>
+ <hr>
+
+<p><h3>Qué significa RGB?</h3></p><h6>
+<p onclick=><input type="radio" name="pregunta3" id="p31"> Rusia, Grecia y Brasil.</p>
+<p onclick=><input type="radio" name="pregunta3" id="p32"> Rata grande y blanca.</p>
+<p onclick=><input type="radio" name="pregunta3" id="p33"> Red - Green - Blue.</p>
+<p onclick=><input type="radio" name="pregunta3" id="p34"> River - Godoy Cruz - Boca.</h6></p>
+ <hr>
+
+<p><h3>Qué empresa desarrolló Siphon Filter?</h3></p><h6>
+<p onclick=><input type="radio" name="pregunta4" id="p41"> Konami.</p>
+<p onclick=><input type="radio" name="pregunta4" id="p42"> Capcom.</p>
+<p onclick=><input type="radio" name="pregunta4" id="p43"> Eidos.</p>
+<p onclick=><input type="radio" name="pregunta4" id="p44"> Eidetic hoy Bend Studio.</h6></p>
+ <hr>
+
+ <p><h3>Cuál es el nombre del protagonista de la saga The Legend of Zelda?.</h3></p><h6>
+<p onclick=><input type="radio" name="pregunta5" id="p51"> Link.</p>
+<p onclick=><input type="radio" name="pregunta5" id="p52"> Zelda.</p>
+<p onclick=><input type="radio" name="pregunta5" id="p66"> Nintendo.</p>
+<p onclick=><input type="radio" name="pregunta5" id="p54"> Luigi.</h6></p>
+ <hr>
+
+<p><h3>Si terminó el cuestionario haga click sobre RESULTADO para saber su puntaje y las respuestas correctas.</h3></p>
+
+<div id="main-container">
+<p><input class="btn" type="button" value=" R E S U L T A D O " onclick="resultado()"/></p>
+</div>
+
+</body>
+</html>
+
+

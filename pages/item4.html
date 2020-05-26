@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio Setinterval Modulo 2</title>
+    </head>
+    <script>
+
+    window.onload = function(){
+
+
+    function realtime(){
+        var a = parseInt(document.getElementById("A").value );
+        var b = parseInt(document.getElementById("B").value );
+        
+        document.getElementById("salida").innerHTML = (a+b);
+        }
+    setInterval(realtime,300);
+    }
+
+    </script>
+    <body>
+        <div class="contenedor">
+            <h1>Ejercicio Setinterval Modulo 2</h1>
+            <h2>Ingrese dos números, estos se sumarán automáticamente. </h2>
+            <p></p>
+            <p><h4>Ingrese las variables A y B.</h4></p>
+         <form> 
+            <h2>a =</h2><input type="number" id="A" placeholder=0 value="0"><br><br>
+        
+            <h2>b =</h2><input type="number" id="B" placeholder=0 value="0"><br>
+         </form>
+            <br><p><h4>El resultado es: <span id="salida"></h4></span></p>
+        </div>
+    </body>
+</html>
